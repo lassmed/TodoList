@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO LIST</title>
+    <style>
+        #left{
+            padding-right: 20px;
+        }
+        body{
+            background-color: #e1dfdf;
+        }
+        #all{
+            display: flex;
+            justify-content: space-around;
+        }
+        #button{
+            width: 75%;
+            l;
+            background-color: #4186ff;
+            color: white;
+        }
+        .close{
+            position: absolute;
+            cursor:pointer;
+            background-color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            background-color: white;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body style="font-size: 25px">
+<div id="all">
+    <div id="left">
+        <ul id="mylist">
+        </ul>
+    </div>
+    <div id="right">
+        <label>Name : </label><br><input type="text" value="" id="nameinput"> <br><br>
+        <label>Content : </label><br><input type="text" value="" id="contentinput"> <br><br>
+        <button type="button" id="button" onclick="newtodo()" >Add Todo</button>
+    </div>
+</div>
+<script src="todo.js"></script>
+</body>
+</html>
